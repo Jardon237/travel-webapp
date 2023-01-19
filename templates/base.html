@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style1.css">
+    <link rel="stylesheet" href="style2.css">
+</head>
+
+<body>
+    <div class="for-header">
+        <header>
+            <p class="logo">TravelWorld</p>
+            <nav>
+                <ul class="nav_links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#Bus search">Bus search</a></li>
+                    <li><a href="#h1">About Us</a></li>
+                    <li><a href="#h2">Contact Us</a></li>
+                </ul>
+            </nav>
+            <a class="cta" href="signin.html"><button>My Account</button></a>
+        </header>
+        {% block content %}
+
+        {% endblock %}
+
+
+        <footer>
+			&copy; Travel World.inc
+			<h1>Contact us:</h1>
+			<ul class="contact">
+				<li class="contact-items"><a href="#" class="fa fa-facebook"></a>Facebook</li>
+				<li class="contact-items"><a href="#" class="fa fa-twitter"></a>Twitter</li>
+				<li class="contact-items"><a href="#" class="fa fa-envelope"></a>Email</li>
+				<li class="contact-items"><a href="#" class="fa fa-whatsapp"></a>Whatsapp</li>
+			</ul>
+			
+		</footer>

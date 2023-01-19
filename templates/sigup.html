@@ -1,28 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style1.css">
-</head>
-
+{% extends 'base.html' %}
 <body>
-    <div class="for-header">
-        <header>
-            <p class="logo">TravelWorld</p>
-            <nav>
-                <ul class="nav_links">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="#Bus search">Bus search</a></li>
-                    <li><a href="#h1">About Us</a></li>
-                    <li><a href="#h2">Contact Us</a></li>
-                </ul>
-            </nav>
-            <a class="cta" href="signin.html"><button>My Account</button></a>
-        </header>
-    </div>
+    {% block content %}
+        
     <div class="main">
         <div class="gradient">
             <div class="text">
@@ -50,7 +29,7 @@
         </div>
 
     </div>
-
+{% endblock %}
 </body>
 
 </html>
