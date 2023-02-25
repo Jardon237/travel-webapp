@@ -1,6 +1,9 @@
 {% extends 'base.html' %}
+{% block content %}
+{% load static %}
+			
 <body>
-    {% block content %}
+    
         
     <div class="main">
         <div class="gradient">
@@ -22,7 +25,7 @@
                         <button type="button" class="cancel">Cancel</button>
                     </div>
                     <div class="account-exist">
-                        <h4>Already have an account? &nbsp;&nbsp;<a href="signin.html">Login</a></h4>
+                        <h4>Already have an account? &nbsp;&nbsp;<a href="{% url 'signin' %}">Login</a></h4>
                     </div>
                 </div>
             </form>

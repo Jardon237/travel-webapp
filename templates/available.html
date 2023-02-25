@@ -1,5 +1,7 @@
 
 {% extends 'base.html' %}
+{% load static %}
+			
 <body>
     {% block content%}
     </div>
@@ -53,7 +55,7 @@
     </div>
     <div class="bus">
         View seats:<br>
-        <a class="act" href="seat.html">View</a>
+        <a class="act" href="{% url 'seat' %}">View</a>
     </div>
     <!-- <div class="bus">
         Pay:<br>

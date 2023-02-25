@@ -1,6 +1,14 @@
 {% extends 'base.html' %}
 {% block content %}	
-			
+{% load static %}
+<style>
+	.parallax{
+		background-image: url( "{% static 'img/car1.jpg' %}"); 
+	}
+	.parallax2{
+		background-image: url(" {% static 'img/car5.jpg' %}");
+	}
+</style>
 	
 		
 		<section id="" class="bus">
@@ -53,7 +61,7 @@
 							<input type="date" id="arrivaldate"><br>
 						</div>
 						<div class="submit">
-							<a id="submit" href="available.html">Bus Search</a>
+							<a id="submit" href="{% url 'available' %}">Bus Search</a>
 						</div>
 					</form>
 				</div>
@@ -68,12 +76,12 @@
 
 				<div class="row">
 					<div id="columes">
-						<img src="car4 (2).jpg" style="width:100%">
+						<img src="{% static 'img/car3.jpg' %}" style="width:100%">
 							
 					</div>
 					<div id="columes">
 						<p>We are happy to inroduce to you Trave World The latest travel site in Cameroon
-							Travel world is Cameroon's biggest online transport ticketing stage that has changed transport
+							Travel world is Cameroons biggest online transport ticketing stage that has changed transport
 							travel in the nation by conveying straight-fowardness to Cameroonians who travel. It was established in 2021
 							by the <b>#travel team</b>. Travel World is a piece of Cameoon driving force towards
 							emergence. our main objective is to reach the needs or every client nation wide with latest
@@ -104,10 +112,10 @@
 				</div>
 				<div class="row">
 					<div class="column">
-						<img src="bus.jpg" style="width:100%">
+						<img src="{% static 'img/bus.jpg' %}" style="width:100%">
 					</div>
 					<div class="column">
-						<form action="/action_page.php">
+						<form action="">
 						<label for="fname">Full Names</label>
 						<input type="text" id="fname" name="firstname" placeholder="Your name..">
 						<label for="country">Email</label>
